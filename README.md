@@ -27,6 +27,7 @@ Yes, in many cases, they are. While professional photos may still offer unique b
 **Can I use AI headshots on social media or resumes?**
 
 Absolutely. AI headshots are high-quality and suitable for social media, resumes, and other professional profiles.
+
 **Is it safe to upload my photo to an AI generator?**
 
 Most reputable headshot generators prioritize user privacy and security. However, always review a platform's privacy policy.
