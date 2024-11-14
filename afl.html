@@ -1,0 +1,92 @@
+<html>
+<head>
+
+    <style>
+        lutbam {
+            width: 50px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #2c003e;
+        }
+        lutbam .button {
+            background: linear-gradient(135deg, #a445b2, #d41872, #f06a6a);
+            border: none;
+            border-radius: 30px;
+            color: white;
+            padding: 0px 20px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease;
+            font-family: Courier;
+        }
+        .button:hover {
+            background: linear-gradient(135deg, #d41872, #a445b2, #f06a6a);
+        }
+        
+        /* Ẩn nút trên màn hình có chiều rộng dưới 48em (768px) */
+        @media only screen and (max-width: 48em) {
+            #launchButton {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lấy phần tử có id 'main-menu'
+            var mainMenu = document.getElementById('main-menu');
+            
+            if (mainMenu) {
+                // Tìm tất cả các phần tử con của mainMenu
+                var menuItems = mainMenu.querySelectorAll('*'); // Lấy tất cả các phần tử con
+        
+                menuItems.forEach(function(item) {
+                    // Kiểm tra xem phần tử có chứa văn bản "WooCommerce not Found"
+                    if (item.innerHTML.includes('WooCommerce not Found')) {
+                        // Thay thế nội dung HTML của phần tử đó
+                        item.innerHTML = item.innerHTML.replace('WooCommerce not Found', '').trim();
+                    }
+                });
+        
+                console.log('Updated menu items: ', menuItems);
+            }
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+    // Thêm favicon 32x32
+    var link32 = document.createElement('link');
+    link32.rel = 'icon';
+    link32.href = 'https://leonardoaifree.com/wp-content/uploads/2024/09/cropped-cropped-favicon-192x192-1-32x32.webp';
+    link32.sizes = '32x32';
+    document.head.appendChild(link32);
+
+    // Thêm favicon 192x192
+    var link192 = document.createElement('link');
+    link192.rel = 'icon';
+    link192.href = 'https://leonardoaifree.com/wp-content/uploads/2024/09/cropped-cropped-favicon-192x192-1-192x192.webp';
+    link192.sizes = '192x192';
+    document.head.appendChild(link192);
+
+    // Thêm apple-touch-icon
+    var appleIcon = document.createElement('link');
+    appleIcon.rel = 'apple-touch-icon';
+    appleIcon.href = 'https://leonardoaifree.com/wp-content/uploads/2024/09/cropped-cropped-favicon-192x192-1-180x180.webp';
+    document.head.appendChild(appleIcon);
+
+    // Thêm msapplication-TileImage
+    var msTileImage = document.createElement('meta');
+    msTileImage.name = 'msapplication-TileImage';
+    msTileImage.content = 'https://leonardoaifree.com/wp-content/uploads/2024/09/cropped-cropped-favicon-192x192-1-270x270.webp';
+    document.head.appendChild(msTileImage);
+});
+
+        </script>
+</head>
+<lutbam>
+   <a href="https://app.leonardo.ai/auth/login?callbackUrl=%2F%3Fvia%3Daifree">
+      <button id="launchButton" class="button">Launch App</button>
+   </a>
+</lutbam>
+</html>
