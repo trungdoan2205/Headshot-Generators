@@ -2,6 +2,7 @@
 
 ## What is a Headshot Generator?
 A headshot generator is an AI-powered tool that produces professional-quality headshots with minimal effort and time. Leveraging artificial intelligence, these tools analyze various facial elements to create images that appear highly polished and authentic. These generators are a convenient alternative to traditional photography sessions, offering a way to achieve professional results without hiring a photographer or spending hours in a studio.
+![Mô tả ảnh](https://github.com/trungdoan2205/Headshot-Generators/raw/main/images/love_story1x1.jpg)
 
 ## Features in AI Headshot Generators
 AI headshot generators come packed with features designed to cater to various needs. Here are some notable ones:
